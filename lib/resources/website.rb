@@ -194,11 +194,11 @@ module Crisp
     end
 
     def find_people_profile_by_email(website_id, email)
-      filter = [{:model => "people", :criterion => "email", :operator => "eq", query: [email]}]
-      profiles = @parent.get(self._url_website(website_id, "/people/profiles/1?search_filter=%s" % CGI.escape(filter.to_json)))
+      # filter = [{:model => "people", :criterion => "email", :operator => "eq", query: [email]}]
+      # profiles = @parent.get(self._url_website(website_id, "/people/profiles/1?search_filter=%s" % CGI.escape(filter.to_json)))
 
-      return profiles[0]
-      # return @parent.get(self._url_people("profile", website_id, email, ""))
+      # return profiles[0]
+      return @parent.get(self._url_people("profile", website_id, email, ""))
     end
 
     def get_people_profile(website_id, people_id)
