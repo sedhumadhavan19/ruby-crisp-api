@@ -5,7 +5,7 @@
 # Author: Valerian Saliou <valerian@valeriansaliou.name>
 ##
 
-require 'rest-client'
+require 'rest_client'
 require 'json'
 
 require_relative 'errors/route'
