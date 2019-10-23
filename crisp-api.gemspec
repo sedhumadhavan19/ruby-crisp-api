@@ -1,3 +1,4 @@
+require 'rest-client'
 require File.expand_path("../lib/crisp-api", __FILE__)
 
 Gem::Specification.new do |s|
